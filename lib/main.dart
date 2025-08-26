@@ -7,7 +7,8 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'package:intl/date_symbol_data_local.dart'; // <-- أضف هذا الاستيراد
 
-void main() async { // <-- حول الدالة إلى async
+void main() async {
+  // <-- حول الدالة إلى async
   WidgetsFlutterBinding.ensureInitialized(); // <-- تأكد من تهيئة الفلاتر
   await initializeDateFormatting('ar', null); // <-- قم بتهيئة بيانات اللغة العربية
   HijriCalendar.setLocal('ar');
