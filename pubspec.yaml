@@ -10,7 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  flutter_localizations: # <-- انقلها إلى هنا
+  flutter_localizations:
     sdk: flutter
 
   # Icons
@@ -26,15 +26,11 @@ dependencies:
   animate_do: ^3.3.4
   percent_indicator: ^4.2.3
 
-
   # Prayer Times & Qibla
   adhan: ^2.0.0-nullsafety.2
-
   geolocator: ^13.0.4
-
-
   flutter_qiblah: ^3.1.0+1
-  #qibla_compass: ^2.0.2
+
   # Local Storage
   shared_preferences: ^2.2.2
 
@@ -52,16 +48,12 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_lints: ^2.0.0
+
 flutter_icons:
   android: true
   ios: true
-  image_path: "assets/images/v.jp
-  g"
-
-
-  flutter_lints: ^2.0.0
-
-
+  image_path: "assets/images/v.jpg"  # ← مُصحح في سطر واحد
 
 flutter:
   uses-material-design: true
