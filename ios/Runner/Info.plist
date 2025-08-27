@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
     <key>CFBundleDevelopmentRegion</key>
-    <string>$(DEVELOPMENT_LANGUAGE)</string>
+    <string>ar</string>
     <key>CFBundleDisplayName</key>
-    <string>Islamapp</string>
+    <string>إسلام أب</string>
     <key>CFBundleExecutable</key>
     <string>$(EXECUTABLE_NAME)</string>
     <key>CFBundleIdentifier</key>
@@ -25,45 +25,48 @@
     <key>LSRequiresIPhoneOS</key>
     <true/>
 
-    <!-- Launch Screen -->
+    <key>MinimumOSVersion</key>
+    <string>12.0</string>
+
     <key>UILaunchStoryboardName</key>
     <string>LaunchScreen</string>
-
-    <!-- Location Permissions -->
-    <key>NSLocationWhenInUseUsageDescription</key>
-    <string>This app needs location access to determine prayer times and Qibla direction.</string>
-    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-    <string>This app needs location access to determine prayer times and Qibla direction.</string>
-
-    <!-- Interface Orientations -->
+    <key>UIMainStoryboardFile</key>
+    <string>Main</string>
     <key>UISupportedInterfaceOrientations</key>
     <array>
-       <string>UIInterfaceOrientationPortrait</string>
-       <string>UIInterfaceOrientationLandscapeLeft</string>
-       <string>UIInterfaceOrientationLandscapeRight</string>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
     </array>
     <key>UISupportedInterfaceOrientations~ipad</key>
     <array>
-       <string>UIInterfaceOrientationPortrait</string>
-       <string>UIInterfaceOrientationPortraitUpsideDown</string>
-       <string>UIInterfaceOrientationLandscapeLeft</string>
-       <string>UIInterfaceOrientationLandscapeRight</string>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationPortraitUpsideDown</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
     </array>
-
-    <!-- Performance -->
+    <key>UIViewControllerBasedStatusBarAppearance</key>
+    <false/>
     <key>CADisableMinimumFrameDurationOnPhone</key>
     <true/>
     <key>UIApplicationSupportsIndirectInputEvents</key>
     <true/>
 
-    <!-- iOS 14+ Scene Delegate -->
-    <key>UISceneDelegate</key>
-    <true/>
+    <!-- Location -->
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>يحتاج التطبيق للموقع لتحديد أوقات الصلاة</string>
 
-    <!-- Audio Background Modes (for Quran/Adhkar audio) -->
+    <!-- Audio -->
     <key>UIBackgroundModes</key>
     <array>
         <string>audio</string>
     </array>
+
+    <!-- Network -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
 </dict>
 </plist>
